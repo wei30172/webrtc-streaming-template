@@ -1,6 +1,6 @@
-# Frontend WebRTC Streaming Template (Next.js 14)
+# Frontend WebRTC Streaming Template
 
-A **frontend-focused WebRTC starter template** built with **Next.js 14 App Router** and **TypeScript**, demonstrating how to implement real-time video streaming and remote viewing using WebRTC.
+A **frontend-focused WebRTC starter template** built with **Next.js App Router** and **TypeScript**, demonstrating how to implement real-time video streaming and remote viewing using WebRTC.
 
 ---
 ## ✨ Key Features
@@ -15,7 +15,7 @@ A **frontend-focused WebRTC starter template** built with **Next.js 14 App Route
 
 | Category | Technology |
 |------|------|
-| Framework | Next.js 14 (App Router) |
+| Framework | Next.js (App Router) |
 | Language | TypeScript |
 | WebRTC | Native WebRTC APIs |
 | Signaling | Socket.io |
