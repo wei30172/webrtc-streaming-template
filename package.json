@@ -1,0 +1,35 @@
+{
+  "name": "webrtc-streaming-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "start:prod": "NODE_ENV=production PORT=3000 HOSTNAME=0.0.0.0 node server.js",
+    "lint": "next lint",
+    "preview": "npm run build && npm run start:prod",
+    "ngrok": "ngrok http 3000",
+    "dev:ngrok": "concurrently \"npm run dev\" \"sleep 3 && npm run ngrok\"",
+    "start:ngrok": "concurrently \"npm run start:prod\" \"sleep 3 && npm run ngrok\""
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "^18",
+    "react-dom": "^18",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "concurrently": "^9.2.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5"
+  }
+}
